@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Text Book</string>
+
+    <string name="empty_title">The title of the note cannot be empty!</string>
+    <string name="empty_content">The content of the note cannot be empty!</string>
+
+    <string name="title">Title</string>
+    <string name="date">Date</string>
+    <string name="color">Color</string>
+    <string name="ascending">Ascending</string>
+    <string name="descending">Descending</string>
+
+    <string name="delete_note">Delete Note</string>
+    <string name="sort_note">Sort Note</string>
+    <string name="add_note">Add</string>
+    <string name="save_note">Save</string>
+
+    <string name="deleted">Deleted</string>
+    <string name="undo">Undo</string>
+
+    <string name="your_notes">Your Notes</string>
+</resources>

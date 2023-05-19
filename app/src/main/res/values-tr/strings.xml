@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Yazı Kitabı</string>
+
+    <string name="empty_title">Başlık boş olamaz!</string>
+    <string name="empty_content">İçerik boş olamaz!</string>
+
+    <string name="title">Başlık</string>
+    <string name="date">Tarih</string>
+    <string name="color">Renk</string>
+    <string name="ascending">Artan</string>
+    <string name="descending">Azalan</string>
+
+    <string name="delete_note">Notu Sil</string>
+    <string name="sort_note">Notları Sırala</string>
+    <string name="add_note">Ekle</string>
+    <string name="save_note">Kaydet</string>
+
+    <string name="deleted">Silindi</string>
+    <string name="undo">Geri Al</string>
+
+    <string name="your_notes">Notlarınız</string>
+</resources>
