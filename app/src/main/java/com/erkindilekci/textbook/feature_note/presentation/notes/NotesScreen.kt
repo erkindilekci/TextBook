@@ -73,12 +73,12 @@ fun NotesScreen(
                 modifier = Modifier
                     .padding(innerPadding)
                     .fillMaxSize()
-                    //
                     .padding(16.dp)
             ) {
                 LazyColumn(modifier = Modifier.fillMaxSize()) {
                     items(state.notes) { note ->
-                        val deletedNoteText = stringResource(id = R.string.deleted) + ": " + note.title
+                        val deletedNoteText =
+                            stringResource(id = R.string.deleted) + ": " + note.title
                         val actionLabelText = stringResource(id = R.string.undo)
 
                         NoteItem(

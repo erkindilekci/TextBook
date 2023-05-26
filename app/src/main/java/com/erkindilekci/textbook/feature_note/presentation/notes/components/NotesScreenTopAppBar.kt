@@ -9,7 +9,6 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -34,7 +33,10 @@ import com.erkindilekci.textbook.feature_note.presentation.notes.NotesViewModel
 fun NotesScreenTopAppBar(viewModel: NotesViewModel) {
     val state = viewModel.state.collectAsState().value
     Column(
-        modifier = Modifier.fillMaxWidth().padding(horizontal = 8.dp), horizontalAlignment = Alignment.CenterHorizontally
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(horizontal = 8.dp),
+        horizontalAlignment = Alignment.CenterHorizontally
     ) {
 
         Row(
@@ -66,7 +68,6 @@ fun NotesScreenTopAppBar(viewModel: NotesViewModel) {
         ) {
             OrderSection(modifier = Modifier
                 .fillMaxWidth(),
-                //.padding(vertical = 16.dp),
                 noteOrder = state.noteOrder,
                 onOrderChange = { viewModel.onEvent(NotesEvent.Order(it)) })
 

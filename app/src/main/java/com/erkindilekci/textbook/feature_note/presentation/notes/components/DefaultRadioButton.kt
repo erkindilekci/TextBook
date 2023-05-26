@@ -11,9 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import kotlinx.coroutines.selects.select
 
 @Composable
 fun DefaultRadioButton(
@@ -25,7 +23,6 @@ fun DefaultRadioButton(
     Row(
         modifier = modifier
             .clickable { onSelected() },
-        //.padding(vertical = 8.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
         RadioButton(
@@ -38,9 +35,9 @@ fun DefaultRadioButton(
                 disabledUnselectedColor = MaterialTheme.colorScheme.onSurface
             )
         )
-        
+
         Spacer(modifier = Modifier.width(4.dp))
-        
+
         Text(text = text, style = MaterialTheme.typography.titleSmall)
     }
 }
